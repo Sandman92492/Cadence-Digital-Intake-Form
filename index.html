@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadence Digital: Premium Client Intake</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .form-step {
+        animation: container-fade-in 0.6s ease-in-out forwards;
+      }
+
+      @keyframes container-fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Added Animations */
+      .animate-fade-in-down {
+        animation: fade-in-down 0.8s ease-in-out forwards;
+        opacity: 0;
+      }
+      @keyframes fade-in-down {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .animate-fade-in-left {
+        animation: fade-in-left 0.8s ease-in-out forwards;
+        opacity: 0;
+      }
+      @keyframes fade-in-left {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .animate-fade-scale-in {
+        animation: fade-scale-in 0.8s ease-in-out forwards;
+        opacity: 0;
+      }
+       @keyframes fade-scale-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@netlify/functions": "https://aistudiocdn.com/@netlify/functions@^5.1.0",
+    "resend": "https://aistudiocdn.com/resend@^3.5.0",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.80.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-black">
+    <div id="root"></div>
+    <script type="module" src="/bundle.js"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

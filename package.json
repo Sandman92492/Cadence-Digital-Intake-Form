@@ -1,0 +1,20 @@
+{
+  "name": "cadence-digital-intake",
+  "version": "1.0.0",
+  "description": "Client intake form for Cadence Digital",
+  "scripts": {
+    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --jsx=automatic --platform=browser && cp index.html dist/"
+  },
+  "dependencies": {
+    "@netlify/functions": "^2.7.0",
+    "@supabase/supabase-js": "^2.44.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "resend": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "^0.20.2"
+  }
+}
